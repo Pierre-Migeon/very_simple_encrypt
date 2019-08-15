@@ -16,5 +16,6 @@ int	main (int argc, char **argv)
 		*c = pm_char_bit_flipper(*c);
 		write(fh_out, c, 1);
 	}
+	free(c);
 	return (0);
 }
